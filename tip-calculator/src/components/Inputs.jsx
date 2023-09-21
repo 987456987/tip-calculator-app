@@ -1,6 +1,6 @@
 function Inputs() {
   return (
-    <>
+    <div className="container">
       <div className="input-container">
         <label>Bill</label>
         <input />
@@ -20,7 +20,7 @@ function Inputs() {
         <label>Number of People</label>
         <input />
       </div>
-    </>
+    </div>
   );
 }
 
