@@ -1,20 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-import Display from "./components/Display"
-import Inputs from "./components/Inputs"
-
+import { useState } from "react";
+import "./App.css";
+import Display from "./components/Display";
+import Inputs from "./components/Inputs";
 
 function App() {
-  const [percent, setPercent] = useState(0)
+  const [billTotal, setBillTotal] = useState(0);
+  const [numPeople, setNumPeople] = useState(0);
+  const [tipPercent, setTipPercent] = useState(0);
 
   return (
     <>
       <main>
-        <Inputs setPercent={setPercent} percent={percent} />
-        <Display />
+        <Inputs
+          setTipPercent={setTipPercent}
+          tipPercent={tipPercent}
+          setNumPeople={setNumPeople}
+          setBillTotal={setBillTotal}
+        />
+        <Display  />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
