@@ -5,12 +5,12 @@ import Inputs from "./components/Inputs"
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [percent, setPercent] = useState(0)
 
   return (
     <>
       <main>
-        <Inputs />
+        <Inputs setPercent={setPercent} percent={percent} />
         <Display />
       </main>
     </>
