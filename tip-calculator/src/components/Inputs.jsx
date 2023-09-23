@@ -2,7 +2,7 @@
 import { useState } from 'react'
 
 function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
-  const [percentInput, setPercentInput] = useState(0)
+  const [percentInput, setPercentInput] = useState("")
   const [billTotalInput, setBillTotalInput] = useState(0)
   const [numPeopleInput, setNumPeopleInput] = useState(0)
 
@@ -21,7 +21,7 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
   }
 
   const buttonClicked = (value) => {
-    setPercentInput(0)
+    setPercentInput("")
     setTipPercent(value)
   }
 

@@ -11,13 +11,13 @@ function Display({ tipPercent, numPeople, billTotal }) {
             <h3>Tip Amount</h3>
             <p className="extra">/ person</p>
           </div>
-          <div className="output">{(tipAmount/numPeople).toFixed(2).toString()}</div>
+          <div className="output">{tipAmount ? ((tipAmount/numPeople).toFixed(2).toString()) : "0.00"}</div>
         </div>
         <div className="inner-container">
           <h3>Total</h3>
           <p className="extra">/ person</p>
         </div>
-          <div className="output">{(total/numPeople).toFixed(2).toString()}</div>
+          <div className="output">{total ? ((total/numPeople).toFixed(2).toString()) : "0.00"}</div>
       </div>
       <button>RESET</button>
     </div>
