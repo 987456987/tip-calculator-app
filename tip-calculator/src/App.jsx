@@ -17,7 +17,11 @@ function App() {
           setNumPeople={setNumPeople}
           setBillTotal={setBillTotal}
         />
-        <Display  />
+        <Display
+          tipPercent={tipPercent}
+          billTotal={billTotal}
+          numPeople={numPeople}
+        />
       </main>
     </>
   );

@@ -2,15 +2,26 @@
 import { useState } from 'react'
 
 function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
-  const [percentInput, setPercentInput] = useState("")
+  const [percentInput, setPercentInput] = useState(0)
+  const [billTotalInput, setBillTotalInput] = useState(0)
+  const [numPeopleInput, setNumPeopleInput] = useState(0)
 
-  const inputChange = (value) => {
+  const percentInputChange = (value) => {
     setPercentInput(value)
     setTipPercent(value)
   }
 
+  const billTotalInputChange = (value) => {
+    setBillTotal(value)
+    setBillTotalInput(value)
+  }
+  const numPeopleInputChange = (value) => {
+    setNumPeople(value)
+    setNumPeopleInput(value)
+  }
+
   const buttonClicked = (value) => {
-    setPercentInput("")
+    setPercentInput(0)
     setTipPercent(value)
   }
 
@@ -19,7 +30,7 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
       <div className="input-container">
         <label>Bill</label>
         {/* handle num errors */}
-        <input onChange={(e) => setBillTotal(e.value)}/>
+        <input type="number" value={billTotalInput} onChange={(e) => billTotalInputChange(e.target.value)}/>
       </div>
       <div className="input-container">
         <label>Select Tip %</label>
@@ -29,13 +40,13 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
           <button className={tipPercent == 15 ? "button-active" : ""} onClick={() => buttonClicked(15)}>15%</button>
           <button className={tipPercent == 25 ? "button-active" : ""} onClick={() => buttonClicked(25)}>25%</button>
           <button className={tipPercent == 50 ? "button-active" : ""} onClick={() => buttonClicked(50)}>50%</button>
-          <input placeholder="Custom" onChange={(e) => inputChange(e.value)} value={percentInput}/>
+          <input type="number" placeholder="Custom" onChange={(e) => percentInputChange(e.target.value)} value={percentInput}/>
         </div>
       </div>
       <div className="input-container">
         <label>Number of People</label>
         {/* handle num errors */}
-        <input onChange={(e) => setNumPeople(e.value)}/>
+        <input type="number" value={numPeopleInput} onChange={(e) => numPeopleInputChange(e.target.value)}/>
       </div>
     </div>
   );
