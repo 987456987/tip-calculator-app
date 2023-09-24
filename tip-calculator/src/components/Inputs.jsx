@@ -42,7 +42,7 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
           <button className={tipPercent == 50 ? "button-active" : ""} onClick={() => buttonClicked(50)}>50%</button>
           <input type="number" placeholder="Custom" onChange={(e) => percentInputChange(e.target.value)} value={percentInput}/>
         </div>
-      </div>
+      </div> 
       <div className="input-container">
         <label>Number of People</label>
         {/* handle num errors */}
