@@ -4,7 +4,7 @@ function Display({ tipPercent, numPeople, billTotal }) {
   const total = parseFloat(billTotal) + tipAmount
   
   return (
-    <div className="container">
+    <div className="display-container">
       <div className="outer-container">
         <div className="inner-container">
           <div className="inner-left-container">
