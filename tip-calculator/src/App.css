@@ -63,3 +63,20 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
+
+.button-group > button {
+  background-color: var(--neutral-very-dark-cyan);
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.button-group > button:hover {
+  background-color: var(--primary-color);
+  color: var(--neutral-very-dark-cyan);
+}
+
+.button-group > .button-active {
+  background-color: var(--primary-color);
+  color: var(--neutral-very-dark-cyan);
+}
