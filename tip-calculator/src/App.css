@@ -80,3 +80,12 @@ main {
   background-color: var(--primary-color);
   color: var(--neutral-very-dark-cyan);
 }
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output {
+  font-size: 2em;
+}
