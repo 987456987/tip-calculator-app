@@ -3,8 +3,8 @@ import { useState } from 'react'
 
 function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
   const [percentInput, setPercentInput] = useState("")
-  const [billTotalInput, setBillTotalInput] = useState(0)
-  const [numPeopleInput, setNumPeopleInput] = useState(0)
+  const [billTotalInput, setBillTotalInput] = useState("")
+  const [numPeopleInput, setNumPeopleInput] = useState("")
 
   const percentInputChange = (value) => {
     setPercentInput(value)
@@ -30,7 +30,7 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
       <div className="input-container">
         <label>Bill</label>
         {/* handle num errors */}
-        <input type="number" value={billTotalInput} onChange={(e) => billTotalInputChange(e.target.value)}/>
+        <input className='big-input' type="number" value={billTotalInput} onChange={(e) => billTotalInputChange(e.target.value)} placeholder='0.00'/>
       </div>
       <div className="input-container">
         <label>Select Tip %</label>
@@ -40,13 +40,13 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
           <button className={tipPercent == 15 ? "button-active" : ""} onClick={() => buttonClicked(15)}>15%</button>
           <button className={tipPercent == 25 ? "button-active" : ""} onClick={() => buttonClicked(25)}>25%</button>
           <button className={tipPercent == 50 ? "button-active" : ""} onClick={() => buttonClicked(50)}>50%</button>
-          <input type="number" placeholder="Custom" onChange={(e) => percentInputChange(e.target.value)} value={percentInput}/>
+          <input className='percent-input' type="number" placeholder="Custom" onChange={(e) => percentInputChange(e.target.value)} value={percentInput}/>
         </div>
       </div> 
       <div className="input-container">
         <label>Number of People</label>
         {/* handle num errors */}
-        <input type="number" value={numPeopleInput} onChange={(e) => numPeopleInputChange(e.target.value)}/>
+        <input className='big-input' type="number" value={numPeopleInput} onChange={(e) => numPeopleInputChange(e.target.value)} placeholder='0.00'/>
       </div>
     </div>
   );
