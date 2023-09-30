@@ -48,9 +48,13 @@ main {
   text-align: right;
   padding: .25em;
   border-radius: 5px;
-  border: 2px solid var(--primary-color);
+  border: none;
   color: var(--neutral-very-dark-cyan);
   background-color: var(--neutral-very-light-grayish-cyan);
+}
+
+.input-container > .big-input:focus {
+  outline: solid 3px var(--primary-color);
 }
 
 .display-container {
@@ -71,6 +75,8 @@ main {
   color: white;
   border: none;
   outline: none;
+  font-size: 1.5em;
+  padding: .25em;
 }
 
 .button-group > button:hover {
@@ -93,11 +99,15 @@ main {
 }
 
 .percent-input {
-  font-size: 1.25em;
+  font-size: 1.5em;
   text-align: center;
   border-radius: 10px;
   max-width: 168px;
   border: none;
   background-color: var(--neutral-very-light-grayish-cyan);
   color: var(--neutral-grayish-cyan);
+}
+
+.percent-input:focus {
+  outline: solid 3px var(--primary-color);
 }
