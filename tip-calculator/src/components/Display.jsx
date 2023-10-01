@@ -25,7 +25,7 @@ function Display({ tipPercent, numPeople, billTotal }) {
           </div>
         </div>
       </div>
-      <button>RESET</button>
+      <button className="reset-button">RESET</button>
     </div>
   );
 }

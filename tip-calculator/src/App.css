@@ -29,9 +29,14 @@ main {
   gap: 2.5em;
   padding: 2.5em;
   border-radius: 25px;
+
+  max-width: 1100px;
 }
 
-
+label {
+  font-size: .8em;
+  color: var(--neutral-dark-grayish-cyan);
+}
 
 /* ////////////////////////////////////////
   INPUT COMPONENT
@@ -44,7 +49,7 @@ main {
 
 .input-container > .big-input {
   width: 100%;
-  font-size: 24px;
+  font-size: 1em;
   text-align: right;
   padding: .25em;
   border-radius: 5px;
@@ -62,6 +67,10 @@ main {
   color: var(--white);
   padding: 2em;
   border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button-group {
@@ -75,8 +84,8 @@ main {
   color: white;
   border: none;
   outline: none;
-  font-size: 1.5em;
-  padding: .25em;
+  font-size: 1em;
+  padding: .5em;
 }
 
 .button-group > button:hover {
@@ -92,17 +101,20 @@ main {
 .inner-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .output {
   font-size: 2em;
+  color: var(--primary-color);
 }
 
 .percent-input {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
   border-radius: 10px;
   max-width: 168px;
+  width: 100%;
   border: none;
   background-color: var(--neutral-very-light-grayish-cyan);
   color: var(--neutral-grayish-cyan);
@@ -110,4 +122,22 @@ main {
 
 .percent-input:focus {
   outline: solid 3px var(--primary-color);
+}
+
+h3 {
+  font-size: .8em;
+}
+
+.extra {
+  font-size: .6em;
+  color: var(--neutral-grayish-cyan)
+}
+
+.reset-button {
+  background-color: var(--primary-color);
+  color: var(--neutral-very-dark-cyan);
+  width: 100%;
+
+  padding: .5em;
+  margin-top: 6em;
 }
