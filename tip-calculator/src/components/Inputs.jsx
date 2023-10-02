@@ -90,7 +90,7 @@ function Inputs({ tipPercent, setTipPercent, setNumPeople, setBillTotal }) {
           type="number"
           value={numPeopleInput}
           onChange={(e) => numPeopleInputChange(e.target.value)}
-          placeholder="0.00"
+          placeholder="0"
         />
       </div>
     </div>

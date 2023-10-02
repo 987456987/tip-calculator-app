@@ -12,7 +12,7 @@ function Display({ tipPercent, numPeople, billTotal }) {
             <p className="extra">/ person</p>
           </div>
           <div className="output">
-            {tipAmount > 0 ? (tipAmount / numPeople).toFixed(2).toString() : "0.00"}
+            {isFinite(tipAmount/numPeople) ? (tipAmount / numPeople).toFixed(2).toString() : "0.00"}
           </div>
         </div>
         <div className="inner-container">
