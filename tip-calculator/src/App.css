@@ -90,6 +90,10 @@ label {
   padding: .35em;
 }
 
+.button-group > button:focus {
+  outline: none;
+}
+
 .button-group > button:hover {
   background-color: var(--primary-color);
   color: var(--neutral-very-dark-cyan);
@@ -119,11 +123,15 @@ label {
   width: 100%;
   border: none;
   background-color: var(--neutral-very-light-grayish-cyan);
-  color: var(--neutral-grayish-cyan);
+  color: var(--neutral-very-dark-cyan);
 }
 
 .percent-input:focus {
   outline: solid 3px var(--primary-color);
+}
+
+.percent-input::placeholder {
+  color: var(--neutral-dark-grayish-cyan);
 }
 
 h3 {
