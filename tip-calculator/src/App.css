@@ -30,7 +30,7 @@ main {
   padding: 2.5em;
   border-radius: 25px;
 
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 label {
@@ -56,6 +56,7 @@ label {
   border: none;
   color: var(--neutral-very-dark-cyan);
   background-color: var(--neutral-very-light-grayish-cyan);
+  margin-top: .25em;
 }
 
 .input-container > .big-input:focus {
@@ -77,6 +78,7 @@ label {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  margin-top: .75em;
 }
 
 .button-group > button {
@@ -84,8 +86,8 @@ label {
   color: white;
   border: none;
   outline: none;
-  font-size: 1em;
-  padding: .5em;
+  font-size: 1.25em;
+  padding: .35em;
 }
 
 .button-group > button:hover {
@@ -110,7 +112,7 @@ label {
 }
 
 .percent-input {
-  font-size: 1em;
+  font-size: 1.25em;
   text-align: center;
   border-radius: 10px;
   max-width: 168px;
