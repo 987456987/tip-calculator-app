@@ -12,7 +12,7 @@ function Display({ tipPercent, numPeople, billTotal }) {
             <p className="extra">/ person</p>
           </div>
           <div className="output">
-            {isFinite(tipAmount/numPeople) ? (tipAmount / numPeople).toFixed(2).toString() : "0.00"}
+            ${isFinite(tipAmount/numPeople) ? (tipAmount / numPeople).toFixed(2).toString() : "0.00"}
           </div>
         </div>
         <div className="inner-container">
@@ -21,7 +21,7 @@ function Display({ tipPercent, numPeople, billTotal }) {
             <p className="extra">/ person</p>
           </div>
           <div className="output">
-            {isFinite(total/numPeople)  ? (total / numPeople).toFixed(2).toString() : "0.00"}
+            ${isFinite(total/numPeople)  ? (total / numPeople).toFixed(2).toString() : "0.00"}
           </div>
         </div>
       </div>

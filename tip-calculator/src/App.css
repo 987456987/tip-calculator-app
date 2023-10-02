@@ -27,10 +27,10 @@ main {
   grid-template-columns: 1fr 1fr;
   background-color: var(--white);
   gap: 2.5em;
-  padding: 2.5em;
+  padding: 1.5em;
   border-radius: 25px;
 
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 label {
@@ -72,6 +72,8 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  max-width: 500px;
 }
 
 .button-group {
@@ -86,7 +88,7 @@ label {
   color: white;
   border: none;
   outline: none;
-  font-size: 1.25em;
+  font-size: 1.2em;
   padding: .35em;
 }
 
@@ -110,13 +112,18 @@ label {
   align-items: center;
 }
 
+.outer-container {
+  display: grid;
+  gap: 1em;
+}
+
 .output {
   font-size: 2em;
   color: var(--primary-color);
 }
 
 .percent-input {
-  font-size: 1.25em;
+  font-size: 1.2em;
   text-align: center;
   border-radius: 10px;
   max-width: 168px;
