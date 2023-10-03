@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+      <h1 className="title">SPLI<br/>TTER</h1>
       <main>
         <Inputs
           setTipPercent={setTipPercent}
