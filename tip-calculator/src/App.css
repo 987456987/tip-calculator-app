@@ -170,3 +170,15 @@ h3 {
 
   color: var(--neutral-dark-grayish-cyan);
 }
+
+@media (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 720px) {
+  
+}
