@@ -126,7 +126,6 @@ label {
   font-size: 1.2em;
   text-align: center;
   border-radius: 10px;
-  max-width: 168px;
   width: 100%;
   border: none;
   background-color: var(--neutral-very-light-grayish-cyan);
@@ -177,8 +176,26 @@ h3 {
     flex-direction: column;
     min-width: 100vw;
   }
+  .display-container{
+    width: 100%;
+    max-width: 100%;
+  }
+  .container{
+    gap: 1.5em;
+  }
+
+  main {
+    gap: 1.5em;
+  }
+
+  .title{
+    margin-top: 1.75em;
+    margin-bottom: 1.5em;
+  }
 }
 
 @media (max-width: 720px) {
-  
+  .button-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
