@@ -63,6 +63,10 @@ label {
   outline: solid 3px var(--primary-color);
 }
 
+.big-input::placeholder {
+  color: var(--neutral-dark-grayish-cyan);
+}
+
 .display-container {
   background-color: var(--neutral-very-dark-cyan);
   color: var(--white);
